@@ -10,12 +10,21 @@ public class Plot : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+        // Uncomment here and the Breed call in Update to see breeding in action.
+        //breedLeft = new GameObject();
+        //Animal leftAnimal = breedLeft.AddComponent<Animal>();
+        //leftAnimal.AddTrait(TraitFactory.createLarge());
+        //leftAnimal.AddTrait(TraitFactory.createStrong());
+        //breedRight = new GameObject();
+        //Animal rightAnimal = breedRight.AddComponent<Animal>();
+        //rightAnimal.AddTrait(TraitFactory.createEnormous());
+        //rightAnimal.AddTrait(TraitFactory.createWeak());
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
+        // Uncomment here and the animal creation in Start to see breeding in action.
+        //Breed();
 	}
 
     void Breed()

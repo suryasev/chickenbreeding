@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 public class TraitFactory {
-    Dictionary<string, BaseTrait> instantiatedTraits = new Dictionary<string, BaseTrait>();
+    static Dictionary<string, BaseTrait> instantiatedTraits = new Dictionary<string, BaseTrait>();
 
     enum Traits
     {
@@ -38,7 +38,7 @@ public class TraitFactory {
         Power,
     }
 
-    BaseTrait createTiny()
+    public static BaseTrait createTiny()
     {
         if (instantiatedTraits.ContainsKey(Traits.Tiny.ToString()))
         {
@@ -66,7 +66,7 @@ public class TraitFactory {
         return tiny;
     }
 
-    BaseTrait createSmall()
+    public static BaseTrait createSmall()
     {
         if (instantiatedTraits.ContainsKey(Traits.Small.ToString()))
         {
@@ -94,7 +94,7 @@ public class TraitFactory {
         return small;
     }
 
-    BaseTrait createMidsized()
+    public static BaseTrait createMidsized()
     {
         if (instantiatedTraits.ContainsKey(Traits.Midsized.ToString()))
         {
@@ -116,7 +116,7 @@ public class TraitFactory {
         return midsized;
     }
 
-    BaseTrait createLarge()
+    public static BaseTrait createLarge()
     {
         if (instantiatedTraits.ContainsKey(Traits.Large.ToString()))
         {
@@ -144,7 +144,7 @@ public class TraitFactory {
         return large;
     }
 
-    BaseTrait createHuge()
+    public static BaseTrait createHuge()
     {
         if (instantiatedTraits.ContainsKey(Traits.Huge.ToString()))
         {
@@ -172,7 +172,7 @@ public class TraitFactory {
         return huge;
     }
 
-    BaseTrait createEnormous()
+    public static BaseTrait createEnormous()
     {
         if (instantiatedTraits.ContainsKey(Traits.Enormous.ToString()))
         {
@@ -200,7 +200,7 @@ public class TraitFactory {
         return enormous;
     }
 
-    BaseTrait createStrong()
+    public static BaseTrait createStrong()
     {
         if (instantiatedTraits.ContainsKey(Traits.Strong.ToString()))
         {
@@ -226,7 +226,7 @@ public class TraitFactory {
         return strong;
     }
 
-    BaseTrait createWeak()
+    public static BaseTrait createWeak()
     {
         if (instantiatedTraits.ContainsKey(Traits.Weak.ToString()))
         {
