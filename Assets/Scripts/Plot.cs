@@ -28,7 +28,7 @@ public class Plot : MonoBehaviour, IDropHandler{
         //Breed();
 	}
 
-    void Breed()
+    public void Breed()
     {
         if (breedLeft != null && breedRight != null)
         {
