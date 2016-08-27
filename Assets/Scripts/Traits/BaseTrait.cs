@@ -1,19 +1,23 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class BaseTrait
 {
-    int fightScore;
-    int strengthScore;
-    int trackingScore;
-    int foodScore;
+    public int fightScore;
+    public int strengthScore;
+    public int trackingScore;
+    public int foodScore;
 
-    float inheritanceChance;
+    public float inheritanceChance;
 
-    string name;
-    string type;
-    string traitClass;
+    public string name;
+    public string type;
+    public string traitClass;
 
-    Dictionary<string, float> linkageMap = new Dictionary<string, float>();
+    public Dictionary<string, float> linkageMap = new Dictionary<string, float>();
+
+    public bool isCompatible(BaseTrait other)
+    {
+        return !(this.type == other.type || traitClass == other.traitClass);
+    }
 }
