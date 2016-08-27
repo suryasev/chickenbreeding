@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
-public class Plot : MonoBehaviour {
+public class Plot : MonoBehaviour, IDropHandler{
 
     GameObject breedLeft;
     GameObject breedRight;
@@ -39,4 +40,12 @@ public class Plot : MonoBehaviour {
             }
         }
     }
+		
+
+	public void OnDrop (PointerEventData eventData)
+	{
+		DraggableBehaviourScript.ItemBeingDragged.transform.SetParent (transform);
+	}
+
 }
+	
