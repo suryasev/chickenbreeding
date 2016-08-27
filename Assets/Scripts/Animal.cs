@@ -18,7 +18,7 @@ public class Animal : MonoBehaviour
 
     }
 
-    GameObject breedWith (Animal mate)
+    public GameObject breedWith (Animal mate)
     {
         List<BaseTrait> babyTraits = new List<BaseTrait>();
         foreach (BaseTrait trait in traits)
