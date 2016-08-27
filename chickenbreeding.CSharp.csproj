@@ -70,8 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animal.cs" />
+    <Compile Include="Assets\Scripts\DraggableBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Plot.cs" />
+    <Compile Include="Assets\Scripts\SlotBehavior.cs" />
     <Compile Include="Assets\Scripts\Traits\BaseTrait.cs" />
     <Compile Include="Assets\Scripts\Traits\SizeFactory.cs" />
     <Compile Include="Assets\Scripts\Traits\SizeTrait.cs" />
