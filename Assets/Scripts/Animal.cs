@@ -17,4 +17,10 @@ public class Animal : MonoBehaviour
     {
 
     }
+
+    GameObject breedWith (Animal mate)
+    {
+
+        return new GameObject();
+    }
 }
